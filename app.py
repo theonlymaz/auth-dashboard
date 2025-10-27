@@ -15,6 +15,16 @@ from components.settings import show_settings_page
 from components.tasks import show_tasks_page
 from utils.auth_functions import logout
 
+# Hide Streamlit branding
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # Load environment variables
 load_dotenv()
 
