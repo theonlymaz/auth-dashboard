@@ -13,3 +13,5 @@ supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY"))
 st.title("🚀 Auth Dashboard")
 st.write("Setup successful!")
 st.success("✅ Connected to Supabase!")
+
+# Save test
